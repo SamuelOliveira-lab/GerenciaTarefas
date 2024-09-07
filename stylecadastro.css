@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.div-cadastro {
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    width: 21.875rem;
+}
+
+.form-cadastro h2 {
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    color: #ffc107;
+    text-align: center;
+}
+
+
+.form-cadastro .icone {
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+
+.form-cadastro .icone i {
+    font-size: 3.125rem;
+    color: #ffc107;
+}
+
+
+.caixa-texto {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.caixa-texto label {
+    margin-left: 0.75rem;
+    display: block;
+    margin-bottom: 0.625rem;
+    color: white;
+}
+
+.caixa-texto input {
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    margin-left: 0.75rem;
+    width: 15.625rem;
+    padding: 0.625rem 0.9375rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+
+.botao {
+    padding: 0.75rem 29%;
+    border: none;
+    border-radius: 0.3125rem;
+    background: linear-gradient(90deg, rgba(36, 20, 0, 1) 0%, rgba(255, 193, 7, 1) 50%, rgba(245, 255, 0, 1) 100%);
+    text-decoration: none;
+    color: #1E1E1E;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.625rem;
+}
+
+.botao:hover {
+    background: linear-gradient(90deg, rgba(36, 20, 0, 1) 0%, rgba(255, 193, 7, 1) 50%, rgba(245, 255, 0, 1) 100%);
+    box-shadow: 0 0.3125rem #666;
+}
+
+
+dialog {
+    border: none;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+dialog button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: #ffc107;
+    color: #1E1E1E;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+
+/* Celular */
+@media only screen and (max-width: 768px) {
+    .div-cadastro {
+        width: 18.5rem;
+        padding: 1rem;
+    }
+
+    .form-cadastro h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-cadastro .icone i {
+        font-size: 2.5rem;
+    }
+
+    .caixa-texto input {
+        width: 14rem;
+    }
+
+    .botao {
+        padding: 0.5rem 25%;
+    }
+
+    dialog {
+        transform: translateX(-50%);
+        display: flex;
+        width: 80%;
+        max-width: 15rem;
+        position: fixed;
+        top: 0.5rem;
+        left: 50%;
+        padding: 0.05rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .div-cadastro {
+        width: 20rem;
+        padding: 1.5rem;
+    }
+
+    .form-cadastro h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-cadastro .icone i {
+        font-size: 3rem;
+    }
+
+    .caixa-texto input {
+        width: 14.5rem;
+    }
+
+    .botao {
+        padding: 0.75rem 27%;
+    }
+
+    dialog {
+        width: 30%;
+    }
+}
+
+/* Notebooks */
+@media (min-width: 1024px) {
+    .div-cadastro {
+        width: 22rem;
+        padding: 1.5rem;
+    }
+
+    .form-cadastro h2 {
+        font-size: 2rem;
+    }
+
+    .form-cadastro .icone i {
+        font-size: 3rem;
+    }
+
+    .caixa-texto input {
+        width: 15.5rem;
+    }
+
+    .botao {
+        padding: 0.5rem 29%;
+    }
+}
